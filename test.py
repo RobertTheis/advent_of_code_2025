@@ -1,1 +1,1 @@
-print(int(299/100))
+print("Hello World"[2:-24])
