@@ -57,11 +57,7 @@ def part_2() -> None:
         output_file.write(f"\nFinal joltage: {total_joltage}")
                 
 def build_joltage_from_digits(input_list: list) -> int:
-    digit_string = ""
-    for elem in input_list:
-        digit_string += elem
-
-    return int(digit_string)
+    return int("".join([ str(elem) for elem in input_list]))
 
 
 def find_index_of_highest_digit(line: str, lower_limit: int, upper_limit: int) -> int:
